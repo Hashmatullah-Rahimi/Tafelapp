@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tafels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- colourful glowing blobs in the background -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="container py-5">
+        <h1 class="titel text-center mb-5">Tafels</h1>
+
+        <div class="row g-4">
+
+            <!-- LINKS: tafel bekijken en leren -->
+            <div class="col-lg-4">
+                <div class="card text-center tafel-card card-links">
+                    <div class="card-header" id="titelLinks">
+                        Tafel van ...
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-auto">
+                                <label for="inputTafelLinks" class="col-form-label">Welke tafel?</label>
+                            </div>
+                            <div class="col">
+                                <input type="number" id="inputTafelLinks" class="form-control">
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-go" onclick="showTafel()">GO!</button>
+                            </div>
+                        </div>
+                        <div class="card-text uitkomsten" id="outputTafelLinks"></div>
+                    </div>
+                    <div class="card-footer">
+                        Made by Hashmat
+                    </div>
+                </div>
+            </div>
+
+            <!-- MIDDEN: oefenen -->
+            <div class="col-lg-4">
+                <div class="card text-center tafel-card card-midden">
+                    <div class="card-header" id="titelMidden">
+                        Oefenen
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-auto">
+                                <label for="inputTafel" class="col-form-label">Welke tafel?</label>
+                            </div>
+                            <div class="col">
+                                <input type="number" id="inputTafel" class="form-control">
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-go" onclick="startOefenen()">START</button>
+                            </div>
+                        </div>
+                        <div class="card-text oefen-vak" id="oefenVak"></div>
+                    </div>
+                    <div class="card-footer">
+                        Made by Hashmat
+                    </div>
+                </div>
+            </div>
+
+            <!-- RECHTS: geheugen -->
+            <div class="col-lg-4">
+                <div class="card text-center tafel-card card-geheugen">
+                    <div class="card-header">
+                        Geheugen
+                    </div>
+                    <div class="card-body">
+                        <div class="geheugen-lijst" id="geheugen"></div>
+                        <button class="btn btn-wis mt-3" onclick="wisGeheugen()">Wis geheugen</button>
+                    </div>
+                    <div class="card-footer">
+                        Made by Hashmat
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="tafelapp.js"></script>
+</body>
+
+</html>
