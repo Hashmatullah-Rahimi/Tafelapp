@@ -1,56 +1,56 @@
 # Tafels
 
-A small web app for learning and practising the multiplication tables (tafels).
-It has a dark, modern and colourful design and works in any web browser.
+Een kleine webapp om de tafels van vermenigvuldiging te leren en te oefenen.
+De app heeft een donker, modern en kleurrijk ontwerp en werkt in elke webbrowser.
 
-Made by Hashmat.
+Gemaakt door Hashmat.
 
-## Features
+## Functies
 
-The page has three cards:
+De pagina heeft drie kaarten:
 
-### 1. Left: Tafel van ... (learn)
-- Type any number and press **GO!** (or Enter).
-- It shows the full table from `1 x n` to `10 x n`, so you can look at it and learn it.
-- When the page opens, the table of 5 is shown.
+### 1. Links: Tafel van ... (leren)
+- Typ een getal en druk op **GO!** (of Enter).
+- Je ziet de hele tafel van `1 x n` tot en met `10 x n`, zodat je hem kunt bekijken en leren.
+- Als de pagina opent, staat de tafel van 5 al klaar.
 
-### 2. Middle: Oefenen (practise)
-- Type a number and press **START** (or Enter).
-- You get 10 sums from that table in a **random order**, for example `4 x 6 = ?`, then `9 x 6 = ?`.
-  Every sum from 1 to 10 is asked exactly once.
-- Type your answer and press **Check** (or Enter):
-  - **Correct** shows a green "✓ Goed!" and goes to the next sum.
-  - **Wrong** shows a red "✗ Fout!" with the correct answer and goes to the next sum.
-- Below the question you see all your answers so far in green (correct) or red (wrong).
-- After 10 sums you see your score (for example `8 / 10`) and a **Nog een keer** button to try again.
+### 2. Midden: Oefenen
+- Typ een getal en druk op **START** (of Enter).
+- Je krijgt 10 sommen van die tafel in een **willekeurige volgorde**, bijvoorbeeld eerst `4 x 6 = ?` en daarna `9 x 6 = ?`.
+  Elke som van 1 tot en met 10 komt precies één keer voorbij.
+- Typ je antwoord en druk op **Check** (of Enter):
+  - **Goed** geeft een groene melding "✓ Goed!" en gaat door naar de volgende som.
+  - **Fout** geeft een rode melding "✗ Fout!" met het juiste antwoord en gaat door naar de volgende som.
+- Onder de vraag zie je al je antwoorden tot nu toe, in het groen (goed) of rood (fout).
+- Na 10 sommen zie je je score (bijvoorbeeld `8 / 10`) en een knop **Nog een keer** om opnieuw te oefenen.
 
-### 3. Right: Geheugen (memory)
-- Every finished practice round is saved here with the table, the time and the score.
-- Score colours: green = 10/10, yellow = 7 or more, red = less than 7.
-- Click a round to see which sums were right and which were wrong.
-  Wrong answers are crossed out with the correct answer next to them.
-- Press **↺** to practise that table again.
-- Press **Wis geheugen** to clear the memory.
-- The memory is saved in the browser (`localStorage`), so it is still there after you refresh the page.
+### 3. Rechts: Geheugen
+- Elke afgeronde oefenronde wordt hier bewaard, met de tafel, de tijd en de score.
+- Kleuren van de score: groen = 10/10, geel = 7 of meer, rood = minder dan 7.
+- Klik op een ronde om te zien welke sommen goed en welke fout waren.
+  Foute antwoorden zijn doorgestreept, met het juiste antwoord ernaast.
+- Druk op **↺** om die tafel nog een keer te oefenen.
+- Druk op **Wis geheugen** om het geheugen leeg te maken.
+- Het geheugen wordt in de browser opgeslagen (`localStorage`), dus het blijft bewaard als je de pagina ververst.
 
-You can use any number, for example 6, 13, 25 or 100.
+Je kunt elk getal gebruiken, bijvoorbeeld 6, 13, 25 of 100.
 
-## Files
+## Bestanden
 
-| File | What it does |
-|------|--------------|
-| `index.html` | The structure of the page with the three cards |
-| `style.css` | The design: dark background, glowing colour blobs, gradients and animations |
-| `tafelapp.js` | All the logic: showing tables, practising, checking answers and the memory |
+| Bestand | Wat het doet |
+|---------|--------------|
+| `index.html` | De opbouw van de pagina met de drie kaarten |
+| `style.css` | Het ontwerp: donkere achtergrond, gloeiende kleurvlekken, kleurverlopen en animaties |
+| `tafelapp.js` | Alle logica: tafels tonen, oefenen, antwoorden controleren en het geheugen |
 
-## How to use
+## Gebruik
 
-1. Put `index.html`, `style.css` and `tafelapp.js` together in the **same folder**.
-2. Open `index.html` in a web browser (Chrome, Edge, Firefox or Safari).
-3. An internet connection is needed for Bootstrap and the Poppins font, which load from the web.
+1. Zet `index.html`, `style.css` en `tafelapp.js` samen in **dezelfde map**.
+2. Open `index.html` in een webbrowser (Chrome, Edge, Firefox of Safari).
+3. Je hebt internet nodig, want Bootstrap en het lettertype Poppins worden van internet geladen.
 
-## Built with
+## Gemaakt met
 
-- HTML, CSS and JavaScript
-- [Bootstrap 5.3](https://getbootstrap.com/) for the layout
+- HTML, CSS en JavaScript
+- [Bootstrap 5.3](https://getbootstrap.com/) voor de opmaak
 - [Google Fonts: Poppins](https://fonts.google.com/specimen/Poppins)
